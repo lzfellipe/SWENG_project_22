@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.App .homepageWelcome h1, h3 {
+  text-align: center;
+  color: white;
+  font-family: roboto-thin, roboto, sans-serif;
+  padding: 20px 
+}
