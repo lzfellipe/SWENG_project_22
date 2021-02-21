@@ -22,7 +22,7 @@ function App() {
         </Navbar>
       </div>
 
-        <Container fluid className="homepageWelcome" style={{ backgroundImage: "url(/Homepage.png)", height: '750px' }}>
+        <Container fluid className="homepageWelcome" style={{ backgroundImage: "url(/Homepage.png)"}} id="background_img">
           <Row>
             <Col>
               <h1>FÍSCONNECT</h1>

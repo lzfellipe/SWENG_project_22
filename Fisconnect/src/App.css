@@ -43,3 +43,13 @@
   font-family: roboto-thin, roboto, sans-serif;
   padding: 20px 
 }
+
+#background_img {
+  display: block;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 600px;
+  height: calc(100vh);
+}
