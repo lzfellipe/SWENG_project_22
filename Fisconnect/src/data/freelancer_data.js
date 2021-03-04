@@ -6,7 +6,7 @@ const freelancer_info = [
         sector:"Retail, Events",
         full_day_rate: 100,
         experience_years: 5,
-        thumbnail: "./images/thumb1.png"
+        thumbnail: "./images/thumb1.jpg"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const freelancer_info = [
         sector:"Hospitality, Events",
         full_day_rate: 200,
         experience_years: 2,
-        thumbnail: "./images/thumb1.png"
+        thumbnail: "./images/thumb2.jpg"
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const freelancer_info = [
         sector:"Retail, Events",
         full_day_rate: 160,
         experience_years: 1,
-        thumbnail: "./images/thumb1.png"
+        thumbnail: "./images/thumb3.jpg"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const freelancer_info = [
         sector:"Corporate",
         full_day_rate: 40,
         experience_years: 7,
-        thumbnail: "./images/thumb1.png"
+        thumbnail: "./images/thumb4.jpg"
     }
 ]
 export default freelancer_info;
