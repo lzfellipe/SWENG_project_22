@@ -1,6 +1,6 @@
 const freelancer_info = [
     {
-        id: 1,
+        id: 0,
         name:"John Doe",
         job_title:"Videographer",
         sector:"Retail, Events",
@@ -9,7 +9,7 @@ const freelancer_info = [
         thumbnail: "./images/thumb1.jpg"
     },
     {
-        id: 2,
+        id: 1,
         name:"Michael Wood",
         job_title:"Videographer",
         sector:"Hospitality, Events",
@@ -18,7 +18,7 @@ const freelancer_info = [
         thumbnail: "./images/thumb2.jpg"
     },
     {
-        id: 3,
+        id: 2,
         name:"Ben Murphy",
         job_title:"Photographer",
         sector:"Retail, Events",
@@ -27,7 +27,7 @@ const freelancer_info = [
         thumbnail: "./images/thumb3.jpg"
     },
     {
-        id: 4,
+        id: 3,
         name:"Jane Doe",
         job_title:"Videographer",
         sector:"Corporate",

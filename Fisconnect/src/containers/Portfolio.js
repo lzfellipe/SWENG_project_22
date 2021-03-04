@@ -1,25 +1,27 @@
 //for now i just copied the home page for testing
 
-import './Home.css';
-
+import './Portfolio.css';
 import'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col, Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap';
+import React, { Component } from 'react';
+import { useParams } from 'react-router';
+import freelancer_info from "../data/freelancer_data";
+function Portfolio(props) {
+    const {id} = useParams();
+    const freelancer = freelancer_info[id];
 
-
-function App() {
   return (
-    <div className="Home">
-      <Container fluid className="homepageWelcome" style={{ backgroundImage: "url(/images/Homepage2.jpg)"}} id="background_img">
-        <h1>TEST</h1>
-        <h3>TEST</h3>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-light">Search</Button>
-        </Form>
+    <div className="Portfolio">
+        <img src={freelancer.thumbnail}></img>
+      <Container fluid className="Portfolio">
+        <h1>{freelancer.name}, {freelancer.job_title}</h1>
+        <h1>Full Day Rate Of {freelancer.full_day_rate}</h1>
+        <h1>{freelancer.experience_years} Years Of Experience</h1>
+        <h2>Specialises in {freelancer.sector}</h2>
       </Container>
     </div>
 
   );
 }
 
-export default App;
+export default Portfolio;
