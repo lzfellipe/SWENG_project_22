@@ -20,7 +20,7 @@ const freelancer_info = [
     {
         id: 2,
         name:"Ben Murphy",
-        job_title:"Photgrapher",
+        job_title:"Photographer",
         sector:"Retail, Events",
         full_day_rate: "€160",
         experience_years: 1,

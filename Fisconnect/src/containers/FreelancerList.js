@@ -1,11 +1,13 @@
 import React from 'react';
 import FreelancerCard from './FreelancerCard.js';
 import PropTypes from 'prop-types';
+import CardDeck from 'react-bootstrap/CardDeck';
 
 class FreelancerList extends React.Component {
   render() {
     return (
-      <div>
+      // <div>
+      <CardDeck style={{display: 'flex', flexDirection: 'row'}}>
         {
           this.props.freelancer_info.map(freelancer => (
             <FreelancerCard
@@ -13,7 +15,10 @@ class FreelancerList extends React.Component {
               freelancer={freelancer} />
           ))
         }
-      </div>
+        </CardDeck>
+
+      /* </div> */
+
     );
   }
 }
