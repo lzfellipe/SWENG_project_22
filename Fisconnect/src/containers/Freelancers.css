@@ -1,0 +1,38 @@
+/* .card_thumbnail {
+    width:100px;
+    height: 10px;
+} */
+
+.dFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    margin: 50px auto;
+    padding: 50px 0  0;
+    box-sizing: border-box;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.freelancer_card {
+    width:30%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transform:scale(.8);
+    transition: all .3% ease-in-out;
+    margin-bottom: 50px
+}
+
