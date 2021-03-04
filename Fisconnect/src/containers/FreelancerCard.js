@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { LinkContainer } from "react-router-bootstrap";
 
 function FreelancerCard(props) {
   let {
@@ -17,7 +18,9 @@ function FreelancerCard(props) {
             <h3>{freelancer.job_title}</h3>
             <p>{freelancer.sector}</p>
             <p className="price">{freelancer.full_day_rate}</p>
-            <button className="btn">See more</button>
+            <LinkContainer to={`freelancers/portfolio/id:${freelancer.id}`}>
+              <button className="btn">See more</button>
+            </LinkContainer>
         </div>
     </div>
     );
