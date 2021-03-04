@@ -6,16 +6,18 @@ import { Container, Row, Col, Navbar, Nav, Form, FormControl, Button} from 'reac
 import React, { Component } from 'react';
 import { useParams } from 'react-router';
 import freelancer_info from "../data/freelancer_data";
-
 function Portfolio(props) {
     const {id} = useParams();
     const freelancer = freelancer_info[id];
 
   return (
-    <div className="Home">
+    <div className="Portfolio">
+        <img src={freelancer.thumbnail}></img>
       <Container fluid className="Portfolio">
-        <h1>Id:{id}</h1>
-        <h3>Name:{freelancer.name}</h3>
+        <h1>{freelancer.name}, {freelancer.job_title}</h1>
+        <h1>Full Day Rate Of {freelancer.full_day_rate}</h1>
+        <h1>{freelancer.experience_years} Years Of Experience</h1>
+        <h2>Specialises in {freelancer.sector}</h2>
       </Container>
     </div>
 

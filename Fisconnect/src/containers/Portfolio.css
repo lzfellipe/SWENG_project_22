@@ -10,21 +10,21 @@
 
 .Portfolio h1{
     font-size: 50px;
-    text-align: left;
+    text-align: centre;
     color: rgb(0, 0, 0);
-    font-family: bold;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
-  .Portfolio h2{
+.Portfolio h2{
+    font-size: 30px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.Portfolio h3{
     font-size: 50px;
     text-align: left;
     color: rgb(0, 0, 0);
-    font-family: bold;
-  }
-
-  .Portfolio h3{
-    font-size: 50px;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    font-family: bold;
+    font-family: Arial, Helvetica, sans-serif;
   }
