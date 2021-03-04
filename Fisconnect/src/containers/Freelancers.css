@@ -3,7 +3,7 @@
     height: 10px;
 } */
 
-.dFlex {
+/* .dFlex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,8 +22,8 @@
     position: relative;
     flex-wrap: wrap;
 }
-
-.freelancer_card {
+*/
+/* .freelancer_card {
     width:30%;
     border-radius: 15px;
     display: flex;
@@ -34,5 +34,37 @@
     transform:scale(.8);
     transition: all .3% ease-in-out;
     margin-bottom: 50px
-}
+} */
 
+
+.freelancer_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    padding: 10px;
+  }
+
+.price {
+    color: grey;
+    font-size: 22px;
+  }
+
+.freelancer_card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+
+  .freelancer_card img {
+      width: 50%;
+  }
+  
