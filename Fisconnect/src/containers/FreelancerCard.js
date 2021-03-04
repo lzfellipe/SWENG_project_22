@@ -18,7 +18,7 @@ function FreelancerCard(props) {
             <h3>{freelancer.job_title}</h3>
             <p>{freelancer.sector}</p>
             <p className="price">{freelancer.full_day_rate}</p>
-            <LinkContainer to={`freelancers/portfolio/:${freelancer.id}`}>
+            <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
               <button className="btn">See more</button>
             </LinkContainer>
         </div>
