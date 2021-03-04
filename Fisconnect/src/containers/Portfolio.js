@@ -12,7 +12,6 @@ function Portfolio(props) {
 
   return (
     <div className="Portfolio">
-        <img src={freelancer.thumbnail}></img>
       <Container fluid className="Portfolio">
         <h1>{freelancer.name}, {freelancer.job_title}</h1>
         <h1>Full Day Rate Of {freelancer.full_day_rate}</h1>

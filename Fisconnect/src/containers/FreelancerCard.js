@@ -37,7 +37,7 @@ function FreelancerCard(props) {
         </Accordion>
 
         <Card.Body>
-          <LinkContainer to={`freelancers/portfolio/id:${freelancer.id}`}>
+          <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
                 <button className="btn">Check out my portfolio</button>
           </LinkContainer>
         </Card.Body>
