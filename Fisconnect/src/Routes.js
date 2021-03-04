@@ -16,7 +16,7 @@ export default function Routes() {
         <Route exact path="/freelancers">
           <Freelancers />
         </Route>
-        <Route exact path ="/freelancers/portfolio/:id">
+        <Route exact path ="/freelancers/portfolio/:id" render={(props) => <Portfolio id={this.match.params.id} /> }>
           <Portfolio />     
         </Route>
     </Switch>
