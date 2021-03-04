@@ -1,4 +1,5 @@
 import React from 'react';
+import './Freelancers.css';
 import PropTypes from 'prop-types';
 import { LinkContainer } from "react-router-bootstrap";
 import Card from 'react-bootstrap/Card';
@@ -14,8 +15,11 @@ function FreelancerCard(props) {
 
 
     return (
-     <Card bg="light" className="freelancer_card" key={freelancer.id} style={{flex: 1}}>
-        <Image variant="top" src={freelancer.thumbnail} rounded/>
+     <Card bg="light" className="freelancer_card" key={freelancer.id} style={{flex: 1}}>        
+        <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
+            <Image className="img_btn" variant="top" src={freelancer.thumbnail} rounded/> 
+        </LinkContainer>
+        
         <Card.Body>
             <Card.Title>{freelancer.name}</Card.Title>
             <Card.Subtitle>{freelancer.job_title}</Card.Subtitle>
@@ -36,11 +40,12 @@ function FreelancerCard(props) {
           </Accordion.Collapse>
         </Accordion>
 
-        <Card.Body>
+        {/* Separate button at bottom */}
+        {/* <Card.Body>
           <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
                 <button className="btn">Check out my portfolio</button>
           </LinkContainer>
-        </Card.Body>
+        </Card.Body> */}
 
     </Card>
     );
