@@ -7,18 +7,14 @@ import { Container, Row, Col, Navbar, Nav, Form, FormControl, Button} from 'reac
 function App() {
   return (
     <div className="Home">
-        <Container fluid className="homepageWelcome" style={{ backgroundImage: "url(/images/Homepage2.png)"}} id="background_img">
-          <Row>
-            <Col>
-              <h1>FÍSCONNECT</h1>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-            <h3>WE CONNECT BUSINESSES TO FREELANCE VIDEOGRAPHERS & PHOTOGRAPHERS</h3>
-            </Col>
-          </Row>
-        </Container>
+      <Container fluid className="homepageWelcome" style={{ backgroundImage: "url(/images/Homepage2.jpg)"}} id="background_img">
+        <h1>Fisconnect</h1>
+        <h3>Search for your next genius</h3>
+        <Form inline>
+          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <Button variant="outline-light">Search</Button>
+        </Form>
+      </Container>
     </div>
 
   );

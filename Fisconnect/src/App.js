@@ -1,7 +1,7 @@
 import './App.css';
 
-import'bootstrap/dist/css/bootstrap.css';
-import { Container, Row, Col, Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import { Container, Row, Col, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 import Routes from "./Routes";
 
@@ -15,16 +15,20 @@ function App() {
             <Nav.Link>Home</Nav.Link>
           </LinkContainer>
           <LinkContainer to="/freelancers">
-           <Nav.Link>Freelancers</Nav.Link>
+            <Nav.Link>Freelancers</Nav.Link>
           </LinkContainer>
           <Nav.Link>About Us</Nav.Link>
         </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-light">Search</Button>
-         </Form>
-       </Navbar>
-       <Routes></Routes>
+        <Nav className="justify-content-end">
+          <Nav.Item>
+            <Nav.Link href="link-0">Register</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="link-1">Sign in</Nav.Link>
+          </Nav.Item>
+        </Nav>
+      </Navbar>
+      <Routes></Routes>
     </div>
   );
 }
