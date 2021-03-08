@@ -17,10 +17,11 @@ class Freelancers extends React.Component {
       console.log(this.state);
   
       return (
-          <Container id="content">
-            <FreelancerList
-              freelancer_info={this.state.freelancer_info} />
-          </Container>
+
+        <Container id="content">
+          <FreelancerList
+            freelancer_info={this.state.freelancer_info} />
+        </Container>
       );
     }
 }
