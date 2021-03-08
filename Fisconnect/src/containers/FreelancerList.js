@@ -2,23 +2,27 @@ import React from 'react';
 import FreelancerCard from './FreelancerCard.js';
 import PropTypes from 'prop-types';
 import CardDeck from 'react-bootstrap/CardDeck';
+import {Container, Row} from 'react-bootstrap';
+
 
 class FreelancerList extends React.Component {
   render() {
     return (
-      // <div>
-      <CardDeck style={{display: 'flex', flexDirection: 'row'}}>
-        {
-          this.props.freelancer_info.map(freelancer => (
-            <FreelancerCard
-              key={freelancer.id}
-              freelancer={freelancer} />
-          ))
-        }
-        </CardDeck>
 
-      /* </div> */
+      <Container fluid>
+        <Row className ="justify-content-md-center">
 
+          <CardDeck style={{display: 'flex', flexDirection: 'row'}}>
+            {
+              this.props.freelancer_info.map(freelancer => (
+                <FreelancerCard
+                  key={freelancer.id}
+                  freelancer={freelancer} />
+              ))
+            }
+            </CardDeck>
+          </Row>
+      </Container>      
     );
   }
 }
