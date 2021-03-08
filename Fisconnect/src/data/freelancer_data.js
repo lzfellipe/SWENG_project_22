@@ -34,6 +34,16 @@ const freelancer_info = [
         full_day_rate: "€40",
         experience_years: 7,
         thumbnail: "./images/thumb4.jpg"
-    }
+    },
+    {
+        id: 7,
+        name:"Hi",
+        job_title:"Videoapher",
+        sector:"Corpore",
+        full_day_rate: "€0",
+        experience_years: 7,
+        thumbnail: "./images/Homepage2.jpg"
+    },
+
 ]
 export default freelancer_info;
