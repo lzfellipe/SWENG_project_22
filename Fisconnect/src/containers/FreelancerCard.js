@@ -20,7 +20,7 @@ function FreelancerCard(props) {
       
       <Col xs={12} md={6} lg={4} xl={3} >
 
-        <Card bg="light" className="freelancer_card" key={freelancer.id} style={{flex: 1}}>        
+        <Card bg="light" className="freelancer_card" key={freelancer.id} style={{flex: 1, justifyContent: 'center'}}>        
             <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
                 <Image className="img_btn" variant="top" src={freelancer.thumbnail} rounded/> 
             </LinkContainer>
