@@ -12,7 +12,7 @@ class FreelancerList extends React.Component {
       <Container fluid>
         <Row className ="justify-content-md-center">
 
-          <CardDeck style={{display: 'flex', flexDirection: 'row'}}>
+          <CardDeck style={{display: 'flex'}}>
             {
               this.props.freelancer_info.map(freelancer => (
                 <FreelancerCard
