@@ -9,7 +9,7 @@ class Freelancers extends React.Component {
     super(props);
 
     this.state = {
-      freelancer_info: freelancer_info.slice(0, 4)
+      freelancer_info: freelancer_info.slice(0, 20)
     };
   }
 
