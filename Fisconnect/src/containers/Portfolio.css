@@ -38,6 +38,8 @@
   width: 100%;
   height: fit-content;
   object-fit: cover;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
 }
 
 .Portfolio .carousel_caption{
