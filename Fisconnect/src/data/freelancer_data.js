@@ -17,7 +17,7 @@ const freelancer_info = [
         full_day_rate: "€200",
         experience_years: 2,
         thumbnail: "../../images/thumb2.jpg",
-        photos: ["../../images/thumb2.jpg"]
+        photos: ["../../images/thumb2.jpg", "../../images/thumb1.jpg"]
     },
     {
         id: 2,

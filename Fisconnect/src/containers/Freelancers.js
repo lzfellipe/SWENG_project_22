@@ -1,7 +1,8 @@
 import React from "react";
 import { Container } from 'react-bootstrap';
 import freelancer_info from "../data/freelancer_data";
-import FreelancerList from '../containers/FreelancerList.js'
+import FreelancerList from '../containers/FreelancerList.js';
+import FreelancerHeader from '../containers/FreelancerHeader.js';
 import './Freelancers.css';
 
 class Freelancers extends React.Component {
@@ -19,6 +20,7 @@ class Freelancers extends React.Component {
       return (
 
         <Container id="content">
+          <FreelancerHeader />
           <FreelancerList
             freelancer_info={this.state.freelancer_info} />
         </Container>
