@@ -2,7 +2,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 600px;
     height: calc(100vh);
     background-position:right top;
     background: rgb(255, 255, 255);
@@ -36,7 +35,7 @@
 
 .Portfolio .main_carousel img{
   width: 100%;
-  height: fit-content;
+  height: 100%;
   object-fit: cover;
   border: 1px solid #ffffff;
   border-radius: 20px;

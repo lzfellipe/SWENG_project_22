@@ -14,7 +14,7 @@ function Portfolio(props) {
 
   return (
     <div className="Portfolio">
-      <Container>
+
         <Carousel className="main_carousel">
         {freelancer.photos.map(photo => (
           <Carousel.Item>
@@ -26,7 +26,7 @@ function Portfolio(props) {
           </Carousel.Item>
         ))}
         </Carousel>
-      </Container>
+
     
      
     </div>
