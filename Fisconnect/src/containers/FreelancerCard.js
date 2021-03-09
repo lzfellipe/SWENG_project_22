@@ -21,14 +21,15 @@ function FreelancerCard(props) {
       <Col xs={12} md={6} lg={4} xl={3} >
 
         <Card bg="light" className="freelancer_card" key={freelancer.id} style={{flex: 1, justifyContent: 'center'}}>        
-            <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
-                <Image className="card_image" variant="top" src={freelancer.thumbnail} rounded/> 
-            </LinkContainer>
-            
+
+            <Image className="card_image" variant="top" src={freelancer.thumbnail} rounded/> 
+
             <Card.Body>
-                <Card.Title>{freelancer.name}</Card.Title>
-                <Card.Subtitle>{freelancer.job_title}</Card.Subtitle>
-                <Card.Text>Brief Description</Card.Text>
+              <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
+                <Card.Title className="card_btn">{freelancer.name}</Card.Title>
+              </LinkContainer>
+              <Card.Subtitle>{freelancer.job_title}</Card.Subtitle>
+              <Card.Text>{freelancer.sector}</Card.Text>
 
             </Card.Body>
             
@@ -39,7 +40,7 @@ function FreelancerCard(props) {
 
               <Accordion.Collapse eventKey="1">
                 <ListGroup className="list-group">
-                  <ListGroup.Item>Sector: {freelancer.sector}</ListGroup.Item>
+                  <ListGroup.Item>{freelancer.card_description}</ListGroup.Item>
                   <ListGroup.Item>Full Day Rate: {freelancer.full_day_rate}</ListGroup.Item>
                 </ListGroup>
               </Accordion.Collapse>

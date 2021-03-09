@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import freelancer_info from "../data/freelancer_data";
 import FreelancerList from '../containers/FreelancerList.js';
 import FreelancerHeader from '../containers/FreelancerHeader.js';
+import Footer from '../containers/Footer.js';
 import './Freelancers.css';
 
 class Freelancers extends React.Component {
@@ -23,6 +24,7 @@ class Freelancers extends React.Component {
           <FreelancerHeader />
           <FreelancerList
             freelancer_info={this.state.freelancer_info} />
+          <Footer />
         </Container>
       );
     }

@@ -4,26 +4,30 @@
     max-width: 300px;
     margin: 10px;
     text-align: center;
-    font-family: arial;
     padding: 10px;
 
   }
 
 
+
 .freelancer_card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: grey;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: darkcyan;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.freelancer_card button:hover {
+  background-color: cadetblue;
+  text-decoration: none;
+}
 
 .card_image {
-    cursor: pointer;
     height: 125px;
     width: 100%;
     object-fit: cover;
@@ -32,6 +36,19 @@
 
 .freelancer_header {
   text-align: center;
+  padding: 20px;
+}
+
+.card_btn {
+  cursor: pointer;
+  font-weight: 9000;
+}
+
+.card_btn:hover {
+  color: darkcyan;
+}
+
+.footer {
   padding: 20px;
 }
 
