@@ -15,12 +15,11 @@ function Portfolio(props) {
   return (
     <div className="Portfolio">
       <Container>
-        <img src="../../images/thumb1.jpg" />
-        <Carousel>
+        <Carousel className="main_carousel">
         {freelancer.photos.map(photo => (
           <Carousel.Item>
             <img src={photo}/>
-            <Carousel.Caption>
+            <Carousel.Caption classname="carousel_caption">
              <h3>test portfolio Carousel</h3>
              <h1>it just works.</h1>
             </Carousel.Caption>

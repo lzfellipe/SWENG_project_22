@@ -30,6 +30,15 @@
   }
 
   .Portfolio img {
-    max-height: 250px;
+    max-height: 500px;
     width: 100%;
+}
+
+.Portfolio .main_carousel img{
+  width: 100%;
+}
+
+.Portfolio .carousel_caption{
+  
+
 }
