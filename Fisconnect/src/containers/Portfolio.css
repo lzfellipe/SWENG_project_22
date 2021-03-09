@@ -36,6 +36,8 @@
 
 .Portfolio .main_carousel img{
   width: 100%;
+  height: fit-content;
+  object-fit: cover;
 }
 
 .Portfolio .carousel_caption{

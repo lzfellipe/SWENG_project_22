@@ -7,7 +7,7 @@ const freelancer_info = [
         full_day_rate: "€100",
         experience_years: 5,
         thumbnail: "../../images/thumb1.jpg",
-        photos: ["../../images/thumb1.jpg", "../../images/thumb2.jpg"],
+        photos: ["../../images/thumb1.jpg", "../../images/thumb2.jpg", "../../images/Homepage6.png", "../../images/Homepage5.png"],
         card_description: "Videographer based in Dublin with over 5 years experience."
     },
     {
