@@ -25,7 +25,9 @@ function FreelancerCard(props) {
             <Image className="card_image" variant="top" src={freelancer.thumbnail} rounded/> 
 
             <Card.Body>
+            <Image className="profile_pic" src="./images/profilepic1.png" roundedCircle />
               <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
+                
                 <Card.Title className="card_btn">{freelancer.name}</Card.Title>
               </LinkContainer>
               <Card.Subtitle>{freelancer.job_title}</Card.Subtitle>
