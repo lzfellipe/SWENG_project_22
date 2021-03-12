@@ -16,10 +16,14 @@
     text-align: center;
     padding: 10px;
     width: 100%;
-    /* background-color: #2e5480!important; */
-    background-color: #fbeeac!important;
+    background-color: #315e92!important;
+    /* background-color: #fbeeac!important; */
     /* background-color: #f4d160!important; */
   }
+
+.light-blue-bg {
+  background-color: #315e92!important;
+}
 
 .freelancer_card button {
   border: none;
