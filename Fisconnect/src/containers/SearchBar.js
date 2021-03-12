@@ -1,12 +1,14 @@
 import React from 'react';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const SearchBar = ({ searchQuery, setSearchQuery }) => {
     return (
-        <form action="/" method="get">
+        <Form action="/" method="get">
             {/* <label htmlFor="header-search">
                 <span className="visually-hidden">Search blog posts</span>
             </label> */}
-            <input
+            <Form.Control
                 value={searchQuery}
                 onInput={(e) => setSearchQuery(e.target.value)}
                 type="text"
@@ -14,8 +16,8 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
                 placeholder="Search Freelancers"
                 name="s" 
             />
-            <button type="submit">Search</button>
-        </form>
+            {/* <Button type="submit">Search</Button> */}
+        </Form>
     );
     
 };

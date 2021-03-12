@@ -7,7 +7,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Image from 'react-bootstrap/Image';
 import Accordion from 'react-bootstrap/Accordion';
 import Button from 'react-bootstrap/Button'
-import {Col} from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 
 
 function FreelancerCard(props) {
@@ -18,45 +18,44 @@ function FreelancerCard(props) {
 
     return (
       
-      <Col xs={12} md={6} lg={4} xl={3} >
+      <Col xs={12} md={6} lg={4} xl={3}>
+          <Card bg="light" className="freelancer_card" key={freelancer.id} style={{flex: 1, justifyContent: 'center'}}>        
 
-        <Card bg="light" className="freelancer_card" key={freelancer.id} style={{flex: 1, justifyContent: 'center'}}>        
+              <Image className="card_image" variant="top" src={freelancer.thumbnail} rounded/> 
 
-            <Image className="card_image" variant="top" src={freelancer.thumbnail} rounded/> 
+              <Card.Body>
+              <Image className="profile_pic" src="./images/profilepic1.png" roundedCircle />
+                <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
+                  
+                  <Card.Title className="card_btn">{freelancer.name}</Card.Title>
+                </LinkContainer>
+                <Card.Subtitle>{freelancer.job_title}</Card.Subtitle>
+                <Card.Text>{freelancer.sector}</Card.Text>
 
-            <Card.Body>
-            <Image className="profile_pic" src="./images/profilepic1.png" roundedCircle />
-              <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
-                
-                <Card.Title className="card_btn">{freelancer.name}</Card.Title>
-              </LinkContainer>
-              <Card.Subtitle>{freelancer.job_title}</Card.Subtitle>
-              <Card.Text>{freelancer.sector}</Card.Text>
+              </Card.Body>
+              
+              <Accordion defaultActiveKey="0">
+                <Accordion.Toggle as={Button} variant="link" eventKey="1">
+                  See More
+                </Accordion.Toggle>
 
-            </Card.Body>
-            
-            <Accordion defaultActiveKey="0">
-              <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                See More
-              </Accordion.Toggle>
+                <Accordion.Collapse eventKey="1">
+                  <ListGroup className="list-group">
+                    <ListGroup.Item>{freelancer.card_description}</ListGroup.Item>
+                    <ListGroup.Item>Full Day Rate: {freelancer.full_day_rate}</ListGroup.Item>
+                  </ListGroup>
+                </Accordion.Collapse>
+              </Accordion>
 
-              <Accordion.Collapse eventKey="1">
-                <ListGroup className="list-group">
-                  <ListGroup.Item>{freelancer.card_description}</ListGroup.Item>
-                  <ListGroup.Item>Full Day Rate: {freelancer.full_day_rate}</ListGroup.Item>
-                </ListGroup>
-              </Accordion.Collapse>
-            </Accordion>
+              {/* Separate button at bottom */}
+              {/* <Card.Body>
+                <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
+                      <button className="btn">Check out my portfolio</button>
+                </LinkContainer>
+              </Card.Body> */}
 
-            {/* Separate button at bottom */}
-            {/* <Card.Body>
-              <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
-                    <button className="btn">Check out my portfolio</button>
-              </LinkContainer>
-            </Card.Body> */}
-
-        </Card>
-      </Col>
+          </Card>
+        </ Col>
     );
 }
 

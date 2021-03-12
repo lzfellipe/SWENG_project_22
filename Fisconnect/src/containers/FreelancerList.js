@@ -2,7 +2,7 @@ import React from 'react';
 import FreelancerCard from './FreelancerCard.js';
 import PropTypes from 'prop-types';
 import CardDeck from 'react-bootstrap/CardDeck';
-import {Container, Row} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 class FreelancerList extends React.Component {
@@ -10,7 +10,7 @@ class FreelancerList extends React.Component {
     return (
 
       <Container fluid>
-        <Row className ="justify-content-md-center">
+        <Row className ="test justify-content-md-center">
 
           <CardDeck style={{display: 'flex'}}>
             {
