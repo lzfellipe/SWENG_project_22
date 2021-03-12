@@ -76,9 +76,11 @@
   }
 
   .yellow-font {
-    color: #D6CC11;
+    /* Yellow from Wix site color: #D6CC11; */
+    color: #f4d160;
   }
   
   .blue-background {
-    background-color: #093F7C;
+    /* Blue from Wix site background-color: #093F7C; */
+    background-color: #28527a;
   }

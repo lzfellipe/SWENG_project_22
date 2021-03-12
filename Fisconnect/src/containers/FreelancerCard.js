@@ -19,7 +19,7 @@ function FreelancerCard(props) {
     return (
       
       <Col xs={12} md={6} lg={4} xl={3}>
-          <Card className="freelancer_card yellow-font" key={freelancer.id} style={{flex: 1, justifyContent: 'center'}}>        
+          <Card className="freelancer_card blue-font" key={freelancer.id} style={{flex: 1, justifyContent: 'center'}}>        
 
               <Image className="card_image" variant="top" src={freelancer.thumbnail} rounded/> 
 

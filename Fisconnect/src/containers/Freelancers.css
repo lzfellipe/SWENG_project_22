@@ -5,6 +5,10 @@
   object-fit: cover;
 }
 
+.blue-font {
+  color: #28527a;
+}
+
 .freelancer_card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -12,15 +16,17 @@
     text-align: center;
     padding: 10px;
     width: 100%;
-    background-color: #2e5480!important;
+    /* background-color: #2e5480!important; */
+    background-color: #fbeeac!important;
+    /* background-color: #f4d160!important; */
   }
 
 .freelancer_card button {
   border: none;
   outline: 0;
   padding: 12px;
-  color: #D6CC11;
-  background-color: #093F7C;
+  color: #f4d160;
+  background-color: #28527a;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -28,9 +34,9 @@
 }
 
 .freelancer_card button:hover {
-  background-color: #093f7cc2;
+  background-color: #28527acc;
   text-decoration: none;
-  color:#D6CC11;
+  color: #f4d160c4;
 }
 
 .card_image {
@@ -51,7 +57,8 @@
 }
 
 .card_btn:hover {
-  color: #D6CC11;
+  color: #28527ac0;
+
 }
 
 .footer {

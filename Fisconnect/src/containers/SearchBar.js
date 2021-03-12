@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 const SearchBar = ({ searchQuery, setSearchQuery }) => {
     return (
-        <Form action="/" method="get">
+        <Form bg="dark" action="/" method="get">
             {/* <label htmlFor="header-search">
                 <span className="visually-hidden">Search blog posts</span>
             </label> */}
