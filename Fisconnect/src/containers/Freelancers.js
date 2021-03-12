@@ -4,30 +4,62 @@ import freelancer_info from "../data/freelancer_data";
 import FreelancerList from '../containers/FreelancerList.js';
 import FreelancerHeader from '../containers/FreelancerHeader.js';
 import Footer from '../containers/Footer.js';
+import SearchBar from '../containers/SearchBar.js';
+import { useState } from 'react';
 import './Freelancers.css';
 
+
+const filterFreelancers = (cards, query) => {
+  if (!query) {
+      return cards;
+  }
+
+  return cards.filter((card) => {
+      const cardName = card.name.toLowerCase();
+      return cardName.includes(query);
+  });
+};
+
+
+// const [searchQuery, setSearchQuery] = useState(query || '');
+// const filteredPosts = filterPosts(freelancer_info, searchQuery);
+
+{/*
 class Freelancers extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      freelancer_info: freelancer_info.slice(0, 20)
+      freelancer_info: filteredPosts
+      // freelancer_info: freelancer_info.slice(0, 20)
     };
   }
+*/}
 
-  render() {
-      console.log(this.state);
+  
+function Freelancers() {
+  const { search } = window.location;
+  const query = new URLSearchParams(search).get('s');
+  const [searchQuery, setSearchQuery] = useState(query || '');
+  const filteredFreelancers = filterFreelancers(freelancer_info, searchQuery);
+
+{/*  render() {
+console.log(this.state); */}
   
       return (
 
         <Container id="content">
           <FreelancerHeader />
+          <SearchBar 
+              searchQuery={searchQuery}
+              setSearchQuery={setSearchQuery}
+          />
           <FreelancerList
-            freelancer_info={this.state.freelancer_info} />
+            freelancer_info={filteredFreelancers} />
           <Footer />
         </Container>
       );
-    }
+    // }
 }
   
 export default Freelancers;
