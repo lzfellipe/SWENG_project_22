@@ -5,19 +5,21 @@
     height: 100%;
     width: 100%;
     background-position:right top;
-    background-color: #315e92!important;
+    background-color: #28527a!important;
 }
 
 .Portfolio h1{
-    font-size: 50px;
-    text-align: centre;
-    color: #d6cc11!important;
-    font-family: roboto-thin, roboto, sans-serif;
-  }
+  font-size: 50px;
+  text-align: centre;
+  color: #d6cc11!important;
+  font-family: roboto-thin, roboto, sans-serif;
+}
 
-  .Portfolio img {
-    max-height: 500px;
-    width: 100%;
+.Portfolio img {
+  max-height: 500px;
+  width: 100%;
+  border: 5px solid #28527a;
+  border-radius: 2px;
 }
 
 .Portfolio .main_carousel img{
@@ -25,12 +27,12 @@
   height: 100%;
   object-fit: cover;
   border: 5px solid #e4de7b!important;
-  border-radius: 20px;
+  border-radius: 2px;
 }
 
 .biography {
   background-color: #e4de7b!important;
-  border-radius: 10px;
+  border-radius: 2px;
   width: 80%;
   align-items: center;
   margin: auto;
@@ -56,7 +58,8 @@
   width: 25%;
   height: 100%;
   object-fit: cover;
-  border: 5px solid #315e92!important;
+  border: 5px solid #28527a!important;
   border-radius: 20px;
 }
+
 
