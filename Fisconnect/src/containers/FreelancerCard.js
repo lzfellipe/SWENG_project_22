@@ -19,12 +19,12 @@ function FreelancerCard(props) {
     return (
       
       <Col xs={12} md={6} lg={4} xl={3}>
-          <Card bg="light" className="freelancer_card" key={freelancer.id} style={{flex: 1, justifyContent: 'center'}}>        
+          <Card className="freelancer_card yellow-font" key={freelancer.id} style={{flex: 1, justifyContent: 'center'}}>        
 
               <Image className="card_image" variant="top" src={freelancer.thumbnail} rounded/> 
 
               <Card.Body>
-              <Image className="profile_pic" src="./images/profilepic1.png" roundedCircle />
+              <Image className="profile_pic" src="./images/profilepic1.jpg" roundedCircle />
                 <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
                   
                   <Card.Title className="card_btn">{freelancer.name}</Card.Title>

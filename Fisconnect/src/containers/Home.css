@@ -73,5 +73,12 @@
     min-height: 600px;
     height: calc(100vh);
     background-position:right top;
+  }
 
+  .yellow-font {
+    color: #D6CC11;
+  }
+  
+  .blue-background {
+    background-color: #093F7C;
   }

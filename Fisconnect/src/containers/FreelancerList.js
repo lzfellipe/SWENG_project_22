@@ -10,7 +10,7 @@ class FreelancerList extends React.Component {
     return (
 
       <Container fluid>
-        <Row className ="test justify-content-md-center">
+        <Row className ="justify-content-md-center">
 
           <CardDeck style={{display: 'flex'}}>
             {

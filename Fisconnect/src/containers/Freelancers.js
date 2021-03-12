@@ -48,7 +48,7 @@ console.log(this.state); */}
   
       return (
 
-        <Container id="content">
+        <Container className="content">
           <FreelancerHeader />
           <SearchBar 
               searchQuery={searchQuery}

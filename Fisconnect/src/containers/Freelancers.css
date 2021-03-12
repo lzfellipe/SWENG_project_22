@@ -1,4 +1,3 @@
-
 .profile_pic {
   height: 60px;
   width: 60px;
@@ -13,15 +12,15 @@
     text-align: center;
     padding: 10px;
     width: 100%;
-
+    background-color: #2e5480!important;
   }
 
 .freelancer_card button {
   border: none;
   outline: 0;
   padding: 12px;
-  color: white;
-  background-color: darkcyan;
+  color: #D6CC11;
+  background-color: #093F7C;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -29,8 +28,9 @@
 }
 
 .freelancer_card button:hover {
-  background-color: cadetblue;
+  background-color: #093f7cc2;
   text-decoration: none;
+  color:#D6CC11;
 }
 
 .card_image {
@@ -51,7 +51,7 @@
 }
 
 .card_btn:hover {
-  color: darkcyan;
+  color: #D6CC11;
 }
 
 .footer {
