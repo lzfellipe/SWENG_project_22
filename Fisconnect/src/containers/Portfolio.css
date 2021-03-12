@@ -52,3 +52,11 @@
   font-family: roboto-thin, roboto, sans-serif;
 }
 
+.gallery img{
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid #315e92!important;
+  border-radius: 20px;
+}
+

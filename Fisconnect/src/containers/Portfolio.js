@@ -6,6 +6,9 @@ import { Container, Carousel, Row, Col, Navbar, Nav, Form, FormControl, Button} 
 import React, { Component } from 'react';
 import { useParams } from 'react-router';
 import freelancer_info from "../data/freelancer_data";
+import 'photoswipe/dist/photoswipe.css'
+import 'photoswipe/dist/default-skin/default-skin.css'
+import { Gallery, Item } from 'react-photoswipe-gallery'
 
 function Portfolio(props) {
     const {id} = useParams();
@@ -63,6 +66,23 @@ function Portfolio(props) {
             </Col>
           </Row>
         </div>
+
+        <div class="gallery">
+         <Gallery>
+          {freelancer.photos.map(photo => (
+          <Item original={photo}
+          thumbnail={photo}
+          width="1024"
+      height="768">
+          {({ ref, open }) => (
+            <img ref={ref} onClick={open} src={photo} />
+          )}
+          </Item>
+        ))}
+          </Gallery>
+        </div>
+
+          
     </div>
 
   );
