@@ -7,7 +7,8 @@ const freelancer_info = [
         full_day_rate: "€100",
         experience_years: 5,
         thumbnail: "../../images/thumb1.jpg",
-        photos: ["../../images/thumb1.jpg", "../../images/thumb2.jpg", "../../images/Homepage6.png", "../../images/Homepage5.png"],
+        photos: ["../../images/TestLandscape1.jpg", "../../images/TestLandscape2.jpg", "../../images/TestLandscape3.jpg"],
+        profile_photo: "../../images/profilepic1.jpg",
         card_description: "Videographer based in Dublin with over 5 years experience."
     },
     {
@@ -30,6 +31,7 @@ const freelancer_info = [
         experience_years: 1,
         thumbnail: "../../images/thumb3.jpg",
         photos: ["../../images/thumb3.jpg"],
+        profile_photo: "../../images/profilepic1.jpg",
         card_description: "Videographer based in Dublin with over 5 years experience."
     },
     {
@@ -41,6 +43,7 @@ const freelancer_info = [
         experience_years: 7,
         thumbnail: "../../images/thumb4.jpg",
         photos: ["../../images/thumb4.jpg"],
+        profile_photo: "../../images/profilepic1.jpg",
         card_description: "Videographer based in Dublin with over 5 years experience."
     },
     {
@@ -52,6 +55,7 @@ const freelancer_info = [
         experience_years: 7,
         thumbnail: "../../images/Homepage2.jpg",
         photos: ["../../images/Homepage2.jpg"],
+        profile_photo: "../../images/profilepic1.jpg",
         card_description: "Videographer based in Dublin with over 5 years experience."
     },
     {
@@ -63,6 +67,7 @@ const freelancer_info = [
         experience_years: 1,
         thumbnail: "../../images/thumb3.jpg",
         photos: ["../../images/thumb3.jpg"],
+        profile_photo: "../../images/profilepic1.jpg",
         card_description: "Videographer based in Dublin with over 5 years experience."
     },
     {
@@ -74,6 +79,7 @@ const freelancer_info = [
         experience_years: 7,
         thumbnail: "../../images/thumb4.jpg",
         photos: ["../../images/thumb4.jpg"],
+        profile_photo: "../../images/profilepic1.jpg",
         card_description: "Videographer based in Dublin with over 5 years experience."
     },
     {
@@ -85,6 +91,7 @@ const freelancer_info = [
         experience_years: 7,
         thumbnail: "../../images/Homepage2.jpg",
         photos: ["../../images/Homepage2.jpg"],
+        profile_photo: "../../images/profilepic1.jpg",
         card_description: "Videographer based in Dublin with over 5 years experience."
     },
 
