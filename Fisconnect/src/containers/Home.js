@@ -7,7 +7,7 @@ import { Container, Row, Col, Navbar, Nav, Form, FormControl, Button} from 'reac
 function App() {
   return (
     <div className="Home">
-      <Container fluid className="homepageWelcome" style={{ backgroundImage: "url(/images/Homepage2.jpg)"}} id="background_img">
+      <Container fluid className="homepageWelcome" style={{ backgroundImage: "url(../../images/Homepage2.jpg)"}} id="background_img">
         <h1>Fisconnect</h1>
         <h3>Search for your next genius</h3>
         <Form inline>
