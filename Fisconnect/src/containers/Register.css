@@ -1,0 +1,11 @@
+#background_img_register {
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 50%;
+    padding-top: 5%;
+    min-height: 600px;
+    height: calc(100vh);
+    background-position:right top;
+}

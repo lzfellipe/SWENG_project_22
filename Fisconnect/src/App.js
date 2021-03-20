@@ -24,7 +24,7 @@ function App() {
           </Nav>
           <Nav className="justify-content-end">
             <Nav.Item>
-              <Nav.Link href="link-0">Register</Nav.Link>
+              <Nav.Link href="/register">Register</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="link-1">Sign in</Nav.Link>
