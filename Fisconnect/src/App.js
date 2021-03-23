@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App blue-background">
       {/* <Navbar bg="dark" variant="dark" className="navbar" expand="lg"> */}
-      <Navbar className="blue-background" variant="dark" className="navbar" expand="lg">
+      <Navbar variant="dark" className="navbar" expand="lg">
         <Navbar.Brand href="/">Fisconnect</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

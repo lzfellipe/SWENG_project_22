@@ -50,7 +50,7 @@ console.log(this.state); */}
 
         <Container className="content">
           <FreelancerHeader />
-          <SearchBar 
+          <SearchBar
               searchQuery={searchQuery}
               setSearchQuery={setSearchQuery}
           />
