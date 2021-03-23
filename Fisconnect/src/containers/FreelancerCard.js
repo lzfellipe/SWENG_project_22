@@ -23,16 +23,18 @@ function FreelancerCard(props) {
 
               <Image className="card_image" variant="top" src={freelancer.thumbnail} rounded/> 
 
-              <Card.Body>
-              <Image className="profile_pic" src="./images/profilepic1.jpg" roundedCircle />
-                <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
-                  
-                  <Card.Title className="card_btn">{freelancer.name}</Card.Title>
-                </LinkContainer>
-                <Card.Subtitle>{freelancer.job_title}</Card.Subtitle>
-                <Card.Text>{freelancer.sector}</Card.Text>
+              <LinkContainer to={`freelancers/portfolio/${freelancer.id}`} className="card_btn">
+                <Card.Body>
+                <Image className="profile_pic" src="./images/profilepic1.jpg" roundedCircle />
 
-              </Card.Body>
+                    
+                  <Card.Title>{freelancer.name}</Card.Title>
+                  
+                  <Card.Subtitle>{freelancer.job_title}</Card.Subtitle>
+                  <Card.Text>{freelancer.sector}</Card.Text>
+
+                </Card.Body>
+              </LinkContainer>
               
               <Accordion defaultActiveKey="0">
                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
