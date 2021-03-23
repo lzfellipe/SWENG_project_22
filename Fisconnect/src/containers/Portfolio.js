@@ -2,17 +2,24 @@
 
 import './Portfolio.css';
 import'bootstrap/dist/css/bootstrap.css';
-import { Container, Carousel, Row, Col, Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap';
+import { Container, Carousel, Row, Col, Navbar, Nav, Form, FormControl, Button, Modal} from 'react-bootstrap';
 import React, { Component } from 'react';
 import { useParams } from 'react-router';
 import freelancer_info from "../data/freelancer_data";
-import 'photoswipe/dist/photoswipe.css'
-import 'photoswipe/dist/default-skin/default-skin.css'
-import { Gallery, Item } from 'react-photoswipe-gallery'
+import 'photoswipe/dist/photoswipe.css';
+import 'photoswipe/dist/default-skin/default-skin.css';
+import { Gallery, Item } from 'react-photoswipe-gallery';
+import { useState } from 'react';
+import SubmitProjectForm from './SubmitProjectForm.js';
 
 function Portfolio(props) {
     const {id} = useParams();
     const freelancer = freelancer_info[id];
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
   return (
     <div className="Portfolio shadow-lg p-3 mb-5">
@@ -63,6 +70,24 @@ function Portfolio(props) {
 
               <Row> <h2>Equipment</h2> </Row>
               <Row> <h3>Camera(Duh), Generic Brand Microphone, Large Pot Of Chilli(con carne), Certified Handsome(source: grandma)</h3> </Row>
+              
+              <Row>
+                <Button variant="primary" onClick={handleShow}>Contact {freelancer.name}</Button>
+                <Modal show={show} onHide={handleClose} centered>
+                  <Modal.Header closeButton>
+                    <Modal.Title>Get in contact with {freelancer.name}!</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <p>Send us a description of what sort of content you're looking for!</p>
+                    <SubmitProjectForm />
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                      Close
+                    </Button>
+                  </Modal.Footer>
+                </Modal>
+              </Row>
             </Col>
           </Row>
         </div>
