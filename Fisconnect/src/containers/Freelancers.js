@@ -5,6 +5,7 @@ import FreelancerList from '../containers/FreelancerList.js';
 import FreelancerHeader from '../containers/FreelancerHeader.js';
 import Footer from '../containers/Footer.js';
 import SearchBar from '../containers/SearchBar.js';
+import Filters from '../containers/FreelancerFilters.js';
 import { useState } from 'react';
 import './Freelancers.css';
 
@@ -14,27 +15,33 @@ const filterFreelancers = (cards, query) => {
       return cards;
   }
 
+  if(query == "videographer") {
+    return cards.filter((card) => {
+      const cardType = card.job_title.toLowerCase();
+      return cardType.includes(query);
+    });
+  }
+
+  else if(query == "photographer") {
+    return cards.filter((card) => {
+      const cardType = card.job_title.toLowerCase();
+      return cardType.includes(query);
+    });
+  }
+
+  else if(query.startsWith("_")) {
+    query = query.substring(1);
+    return cards.filter((card) => {
+      const cardType = card.sector.toLowerCase();
+      return cardType.includes(query);
+    });
+  }
+
   return cards.filter((card) => {
       const cardName = card.name.toLowerCase();
       return cardName.includes(query);
   });
 };
-
-
-// const [searchQuery, setSearchQuery] = useState(query || '');
-// const filteredPosts = filterPosts(freelancer_info, searchQuery);
-
-{/*
-class Freelancers extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      freelancer_info: filteredPosts
-      // freelancer_info: freelancer_info.slice(0, 20)
-    };
-  }
-*/}
 
   
 function Freelancers() {
@@ -52,6 +59,9 @@ console.log(this.state); */}
           <FreelancerHeader />
           <SearchBar
               searchQuery={searchQuery}
+              setSearchQuery={setSearchQuery}
+          />
+          <Filters
               setSearchQuery={setSearchQuery}
           />
           <FreelancerList
