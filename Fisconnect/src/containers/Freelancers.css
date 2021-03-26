@@ -9,6 +9,19 @@
   color: #28527a;
 }
 
+.toggle button {
+  margin: 10px 0px;;
+  background-color: #315e92;
+  color: #f4d160;
+  text-decoration: none;
+}
+
+.toggle button:hover {
+  background-color: #28527a;
+  color: #f4d160;
+  text-decoration: none;
+}
+
 .freelancer_card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;

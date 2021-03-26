@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Row, Col, Form } from 'react-bootstrap'
+import { Row, Col, Form, Accordion, Button } from 'react-bootstrap'
 
 
 const Filters = ({ setSearchQuery }) => {
@@ -21,9 +21,13 @@ const Filters = ({ setSearchQuery }) => {
 
 //   render() {
     return (
-    //   <div onChange={this.onChangeValue}>
-    <div>
-        <Form>
+    <div className="toggle">
+    <Accordion defaultActiveKey="0">
+        <Accordion.Toggle as={Button} variant="link" eventKey="1" className="test">
+            Filter Selection
+        </Accordion.Toggle>
+        <Accordion.Collapse eventKey="1">
+        <Form className="yellow-font">
             <Row>
             <Col>
             <input
@@ -77,8 +81,9 @@ const Filters = ({ setSearchQuery }) => {
             </Col>
             </Row>
         </Form>
-    </div>
-
+        </Accordion.Collapse>
+        </Accordion>
+        </div>
 
 
     );
