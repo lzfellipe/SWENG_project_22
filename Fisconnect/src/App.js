@@ -20,7 +20,9 @@ function App() {
             <LinkContainer to="/freelancers">
               <Nav.Link>Freelancers</Nav.Link>
             </LinkContainer>
-            <Nav.Link>About Us</Nav.Link>
+            <LinkContainer to="/aboutus">
+              <Nav.Link>About Us</Nav.Link>
+            </LinkContainer>
           </Nav>
           <Nav className="justify-content-end">
             <Nav.Item>

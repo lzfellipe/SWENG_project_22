@@ -2,8 +2,9 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./containers/Home";
 import Freelancers from "./containers/Freelancers";
-import Portfolio from "./containers/Portfolio"
-import Register from "./containers/Register"
+import Portfolio from "./containers/Portfolio";
+import Register from "./containers/Register";
+import AboutUs from "./containers/AboutUs";
 
 export default function Routes() {
   return (
@@ -22,6 +23,9 @@ export default function Routes() {
       </Route>
       <Route exact path="/freelancers/portfolio/:id">
         <Portfolio />
+      </Route>
+      <Route exact path="/aboutus"> 
+        <AboutUs />
       </Route>
     </Switch>
   );
