@@ -9,7 +9,11 @@ const freelancer_info = [
         thumbnail: "../../images/thumb1.jpg",
         photos: ["../../images/TestLandscape1.jpg", "../../images/TestLandscape2.jpg", "../../images/TestLandscape3.jpg"],
         profile_photo: "../../images/profilepic1.jpg",
-        card_description: "Videographer based in Dublin with over 5 years experience."
+        card_description: "Videographer based in Dublin with over 5 years experience.",
+        biography: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        clients: "Generic Rock Band, Pop Duo, Lady Gaga Country Folk Cover Band",
+        certifications: "jack black's school of rock",
+        equipment: "Camera(Duh), Generic Brand Microphone, Large Pot Of Chilli(con carne), Certified Handsome(source: grandma)" 
     },
     {
         id: 1,
@@ -20,7 +24,11 @@ const freelancer_info = [
         experience_years: 2,
         thumbnail: "../../images/thumb2.jpg",
         photos: ["../../images/thumb2.jpg", "../../images/thumb1.jpg"],
-        card_description: "Videographer based in Dublin with over 5 years experience."
+        card_description: "Videographer based in Dublin with over 5 years experience.",
+        biography: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        clients: "Generic Rock Band, Pop Duo, Lady Gaga Country Folk Cover Band",
+        certifications: "jack black's school of rock",
+        equipment: "Camera(Duh), Generic Brand Microphone, Large Pot Of Chilli(con carne), Certified Handsome(source: grandma)"
     },
     {
         id: 2,
@@ -31,8 +39,12 @@ const freelancer_info = [
         experience_years: 1,
         thumbnail: "../../images/thumb3.jpg",
         photos: ["../../images/thumb3.jpg"],
-        profile_photo: "../../images/profilepic1.jpg",
-        card_description: "Videographer based in Dublin with over 5 years experience."
+        profile_photo: "../../images/profilepic1.jpg",   
+        card_description: "Videographer based in Dublin with over 5 years experience.",
+        biography: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        clients: "Generic Rock Band, Pop Duo, Lady Gaga Country Folk Cover Band",
+        certifications: "jack black's school of rock",
+        equipment: "Camera(Duh), Generic Brand Microphone, Large Pot Of Chilli(con carne), Certified Handsome(source: grandma)"
     },
     {
         id: 3,
@@ -44,7 +56,11 @@ const freelancer_info = [
         thumbnail: "../../images/thumb4.jpg",
         photos: ["../../images/thumb4.jpg"],
         profile_photo: "../../images/profilepic1.jpg",
-        card_description: "Videographer based in Dublin with over 5 years experience."
+        card_description: "Videographer based in Dublin with over 5 years experience.",
+        biography: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        clients: "Generic Rock Band, Pop Duo, Lady Gaga Country Folk Cover Band",
+        certifications: "jack black's school of rock",
+        equipment: "Camera(Duh), Generic Brand Microphone, Large Pot Of Chilli(con carne), Certified Handsome(source: grandma)"
     },
     {
         id: 4,
@@ -56,7 +72,11 @@ const freelancer_info = [
         thumbnail: "../../images/Homepage2.jpg",
         photos: ["../../images/Homepage2.jpg"],
         profile_photo: "../../images/profilepic1.jpg",
-        card_description: "Videographer based in Dublin with over 5 years experience."
+        card_description: "Videographer based in Dublin with over 5 years experience.",
+        biography: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        clients: "Generic Rock Band, Pop Duo, Lady Gaga Country Folk Cover Band",
+        certifications: "jack black's school of rock",
+        equipment: "Camera(Duh), Generic Brand Microphone, Large Pot Of Chilli(con carne), Certified Handsome(source: grandma)"
     },
     {
         id: 5,
@@ -68,7 +88,11 @@ const freelancer_info = [
         thumbnail: "../../images/thumb3.jpg",
         photos: ["../../images/thumb3.jpg"],
         profile_photo: "../../images/profilepic1.jpg",
-        card_description: "Videographer based in Dublin with over 5 years experience."
+        card_description: "Videographer based in Dublin with over 5 years experience.",
+        biography: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        clients: "Generic Rock Band, Pop Duo, Lady Gaga Country Folk Cover Band",
+        certifications: "jack black's school of rock",
+        equipment: "Camera(Duh), Generic Brand Microphone, Large Pot Of Chilli(con carne), Certified Handsome(source: grandma)"
     },
     {
         id: 6,
@@ -80,7 +104,11 @@ const freelancer_info = [
         thumbnail: "../../images/thumb4.jpg",
         photos: ["../../images/thumb4.jpg"],
         profile_photo: "../../images/profilepic1.jpg",
-        card_description: "Videographer based in Dublin with over 5 years experience."
+        card_description: "Videographer based in Dublin with over 5 years experience.",
+        biography: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        clients: "Generic Rock Band, Pop Duo, Lady Gaga Country Folk Cover Band",
+        certifications: "jack black's school of rock",
+        equipment: "Camera(Duh), Generic Brand Microphone, Large Pot Of Chilli(con carne), Certified Handsome(source: grandma)"
     },
     {
         id: 7,
@@ -92,7 +120,11 @@ const freelancer_info = [
         thumbnail: "../../images/Homepage2.jpg",
         photos: ["../../images/Homepage2.jpg"],
         profile_photo: "../../images/profilepic1.jpg",
-        card_description: "Videographer based in Dublin with over 5 years experience."
+        card_description: "Videographer based in Dublin with over 5 years experience.",
+        biography: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        clients: "Generic Rock Band, Pop Duo, Lady Gaga Country Folk Cover Band",
+        certifications: "jack black's school of rock",
+        equipment: "Camera(Duh), Generic Brand Microphone, Large Pot Of Chilli(con carne), Certified Handsome(source: grandma)"
     },
 
 ]

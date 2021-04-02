@@ -47,29 +47,20 @@ function Portfolio(props) {
             </Col>
             <Col>
               <Row> <h2>Biogrpahy</h2> </Row>
-              <Row>
-                <h3>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                  sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </h3>
-              </Row>
+              <Row> <h3> {freelancer.biography} </h3> </Row>
             </Col>
             <Col xs={3}>
               <Row> <h2>Years Experience</h2></Row>
               <Row> <h3>{freelancer.experience_years}</h3></Row>
               
               <Row> <h2>Clients</h2> </Row>
-              <Row> <h3>Generic Rock Band, Pop Duo, Lady Gaga Country Folk Cover Band </h3> </Row>
+              <Row> <h3>{freelancer.clients}</h3> </Row>
 
               <Row> <h2>Certifications</h2> </Row>
-              <Row> <h3>Jack Blacks School Of Rock</h3> </Row>
+              <Row> <h3>{freelancer.certifications}</h3> </Row>
 
               <Row> <h2>Equipment</h2> </Row>
-              <Row> <h3>Camera(Duh), Generic Brand Microphone, Large Pot Of Chilli(con carne), Certified Handsome(source: grandma)</h3> </Row>
+              <Row> <h3>{freelancer.equipment}</h3> </Row>
               
               <Row>
                 <Button variant="primary" onClick={handleShow}>Contact {freelancer.name}</Button>
