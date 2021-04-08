@@ -1,6 +1,7 @@
 import { Container, Row, Col, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import './Register.css';
 import { useState } from 'react';
+import NavigationBar from '../containers/NavigationBar.js'
 
 function Register(props) {
     const [validated, setValidated] = useState(false);
@@ -15,6 +16,8 @@ function Register(props) {
     };
 
     return (
+        <div className="blue-background">
+        <NavigationBar />
 
         <Container fluid className="RegisterButton" id="background_img_register">
             <h1>COME WORK WITH US</h1>
@@ -78,6 +81,7 @@ function Register(props) {
 
             </Form>
         </Container>
+        </div>
 
 
     );

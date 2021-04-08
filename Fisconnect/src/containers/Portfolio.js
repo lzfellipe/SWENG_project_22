@@ -11,6 +11,7 @@ import 'photoswipe/dist/default-skin/default-skin.css';
 import { Gallery, Item } from 'react-photoswipe-gallery';
 import { useState } from 'react';
 import SubmitProjectForm from './SubmitProjectForm.js';
+import NagivationBar from './NavigationBar.js'
 
 function Portfolio(props) {
     const {id} = useParams();
@@ -22,7 +23,8 @@ function Portfolio(props) {
     const handleShow = () => setShow(true);
 
   return (
-    <div className="Portfolio shadow-lg p-3 mb-5">
+    <div className="Portfolio shadow-lg p-2 mb-5">
+      <NagivationBar />
         <Carousel className="main_carousel">
         {freelancer.photos.map(photo => (
           <Carousel.Item>

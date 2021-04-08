@@ -8,11 +8,14 @@ import SearchBar from '../containers/SearchBar.js';
 import Filters from '../containers/FreelancerFilters.js';
 import { useState } from 'react';
 import './AboutUs.css';
+import NavigationBar from '../containers/NavigationBar.js'
 
 function AboutUs(props) {
 
   return (
    <div className="AboutUs">
+     <NavigationBar />
+
       <div>
         <row>
             <container fluid className="WhoWeAre">

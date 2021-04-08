@@ -7,10 +7,10 @@ import Routes from "./Routes";
 
 function App() {
   return (
-    <div className="App blue-background">
+    <div className="App">
       {/* <Navbar bg="dark" variant="dark" className="navbar" expand="lg"> */}
-      <Navbar variant="dark" className="navbar" expand="lg">
-        <Navbar.Brand href="/">Fisconnect</Navbar.Brand>
+      {/* <Navbar variant="dark" className="navbar" expand="lg">
+        <Navbar.Brand href="/">Bubble Vision</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" activeKey={window.location.pathname}>
@@ -33,7 +33,7 @@ function App() {
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
+      </Navbar> */}
       <Routes></Routes>
     </div>
   );

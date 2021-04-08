@@ -1,9 +1,11 @@
 import './Home.css';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import { Container, Row, Col, Navbar, Nav, Form, FormControl, Button, Modal} from 'react-bootstrap';
+import { Container, Image, Row, Col, Navbar, Nav, Form, FormControl, Button, Modal} from 'react-bootstrap';
 import { useState } from 'react';
+import { LinkContainer } from "react-router-bootstrap";
 import SubmitProjectForm from './SubmitProjectForm.js'
+import NavigationBar from './NavigationBar.js'
 
 function App() {
   const [show, setShow] = useState(false);
@@ -12,16 +14,34 @@ function App() {
   const handleShow = () => setShow(true);
 
   return (
-    <div className="Home">
-      <Container fluid className="homepageWelcome" style={{ backgroundImage: "url(../../images/Homepage2.jpg)"}} id="background_img">
-        <h1>Fisconnect</h1>
+    <div className="Home" style={{ backgroundImage: "url(../../images/Homepage2.jpg)"}} id="background_img">
+      <NavigationBar/>
+      <Container className="homepageWelcome yellow-font d-flex align-items-center">
+        <div className="center-align">
+          <h2>we are</h2>
+          <h1 className="font-weight-bold">Bubble Vision</h1>  
+          <h2>we connect businesses to freelance videographers and photographers</h2>
+        </div>
+{/* 
         <h3>Search for your next genius</h3>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
           <Button variant="outline-light">Search</Button>
-        </Form>
+        </Form> */}
 
-        <Button variant="primary" onClick={handleShow}>Submit a Project Idea!</Button>
+      </Container>
+
+      <Row className="buttons">
+        <Col className="d-flex justify-content-center">
+          <LinkContainer to="/freelancers">
+            <Button>Browse our Freelancers!</Button>
+          </LinkContainer>
+          
+        </Col>
+        <Col className="d-flex justify-content-center">
+          <Button onClick={handleShow}>Submit a Project Idea!</Button>
+        </Col>
+      </Row>  
 
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
@@ -39,8 +59,6 @@ function App() {
           </Button>
         </Modal.Footer>
       </Modal>
-
-      </Container>
     </div>
 
   );

@@ -6,6 +6,7 @@ import FreelancerHeader from '../containers/FreelancerHeader.js';
 import Footer from '../containers/Footer.js';
 import SearchBar from '../containers/SearchBar.js';
 import Filters from '../containers/FreelancerFilters.js';
+import NavigationBar from '../containers/NavigationBar.js';
 import { useState } from 'react';
 import './Freelancers.css';
 
@@ -54,8 +55,10 @@ function Freelancers() {
 console.log(this.state); */}
   
       return (
-
+        <div className="blue-background">
+        <NavigationBar />
         <Container className="content">
+          
           <FreelancerHeader />
           <SearchBar
               searchQuery={searchQuery}
@@ -68,6 +71,7 @@ console.log(this.state); */}
             freelancer_info={filteredFreelancers} />
           <Footer />
         </Container>
+        </div>
       );
     // }
 }

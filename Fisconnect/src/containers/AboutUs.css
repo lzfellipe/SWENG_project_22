@@ -21,7 +21,7 @@
 .AboutUs h1 {
     font-size: 50px;
     text-align: centre;
-    font-family: roboto-thin, roboto, sans-serif;
+    /* font-family: roboto-thin, roboto, sans-serif; */
     text-align: center;
     color: #f4d160;
 }

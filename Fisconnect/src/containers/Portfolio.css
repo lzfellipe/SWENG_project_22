@@ -12,7 +12,7 @@
   font-size: 50px;
   text-align: centre;
   color: #315e92!important;
-  font-family: roboto-thin, roboto, sans-serif;
+  /* font-family: roboto-thin, roboto, sans-serif; */
 }
 
 .Portfolio img {
@@ -50,14 +50,14 @@
 .biography h2{
   font-size: 20px;
   color: #f4d160;
-  font-family: roboto-thin, roboto, sans-serif;
+  /* font-family: roboto-thin, roboto, sans-serif; */
   font-weight: bold;
 }
 
 .biography h3{
   font-size: 20px;
   color: #f4d160;
-  font-family: roboto-thin, roboto, sans-serif;
+  /* font-family: roboto-thin, roboto, sans-serif; */
 }
 
 .gallery img{
