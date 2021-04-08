@@ -34,12 +34,12 @@ function App() {
       <Row className="buttons">
         <Col className="d-flex justify-content-center">
           <LinkContainer to="/freelancers">
-            <Button>Browse our Freelancers!</Button>
+            <Button className="btn-lg">Browse our Freelancers!</Button>
           </LinkContainer>
           
         </Col>
         <Col className="d-flex justify-content-center">
-          <Button onClick={handleShow}>Submit a Project Idea!</Button>
+          <Button className="btn-lg" onClick={handleShow}>Submit a Project Idea!</Button>
         </Col>
       </Row>  
 

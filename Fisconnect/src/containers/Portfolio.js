@@ -29,10 +29,6 @@ function Portfolio(props) {
         {freelancer.photos.map(photo => (
           <Carousel.Item>
             <img src={photo}/>
-            <Carousel.Caption classname="carousel_caption">
-             <h1>test portfolio Carousel</h1>
-             <h1>it just works.</h1>
-            </Carousel.Caption>
           </Carousel.Item>
         ))}
         </Carousel>
@@ -43,29 +39,37 @@ function Portfolio(props) {
 
         <div class="biography shadow-lg p-3 mb-5" fluid="md">
           <Row>
-            <Col xs={3}>
+            <Col xs={3} className="m-2">
               <h2>{freelancer.name}</h2>
               <img src={freelancer.profile_photo}></img>
             </Col>
-            <Col>
-              <Row> <h2>Biogrpahy</h2> </Row>
+            <Col  className="m-2">
+              <Row> <h2>Biography</h2> </Row>
               <Row> <h3> {freelancer.biography} </h3> </Row>
             </Col>
-            <Col xs={3}>
+            <Col xs={3}  className="m-2">
               <Row> <h2>Years Experience</h2></Row>
               <Row> <h3>{freelancer.experience_years}</h3></Row>
               
+              <br/>
+
               <Row> <h2>Clients</h2> </Row>
               <Row> <h3>{freelancer.clients}</h3> </Row>
+
+              <br/>
 
               <Row> <h2>Certifications</h2> </Row>
               <Row> <h3>{freelancer.certifications}</h3> </Row>
 
+              <br/>
+
               <Row> <h2>Equipment</h2> </Row>
               <Row> <h3>{freelancer.equipment}</h3> </Row>
-              
-              <Row>
-                <Button variant="primary" onClick={handleShow}>Contact {freelancer.name}</Button>
+
+              <br/>
+
+              <Row className="contact-btn p-2">
+                <Button  onClick={handleShow}>Contact {freelancer.name}</Button>
                 <Modal show={show} onHide={handleClose} centered>
                   <Modal.Header closeButton>
                     <Modal.Title>Get in contact with {freelancer.name}!</Modal.Title>

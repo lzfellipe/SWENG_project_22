@@ -1,5 +1,4 @@
 #background_img_register {
-    color: white;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -8,4 +7,17 @@
     min-height: 600px;
     height: calc(100vh);
     background-position:right top;
+}
+
+.register-btn button {
+    margin: 10px 0px;;
+    background-color: #315e92;
+    color: #f4d160;
+    text-decoration: none;
+  }
+
+.register-btn button:hover {
+    background-color: #28527a;
+    color: #f4d160;
+    text-decoration: none;
 }

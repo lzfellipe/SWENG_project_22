@@ -16,12 +16,13 @@ function Register(props) {
     };
 
     return (
-        <div className="blue-background">
+        <div className="blue-background yellow-font">
         <NavigationBar />
 
         <Container fluid className="RegisterButton" id="background_img_register">
-            <h1>COME WORK WITH US</h1>
-            <h5>1. Consistent job placements.</h5>
+            <h1>Come Work With Us!</h1>
+            <br/>
+            <h5>1. Consistent job placements</h5>
             <h5>2. Seamless invoice management systems</h5>
             <h5>3. Steady cashflows<br></br><br></br></h5>
 
@@ -75,9 +76,10 @@ function Register(props) {
                     </Form.Group>
                 </Form.Row>
                 <h6>Once we receive your application we will be in touch to begin your screening process.</h6>
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
+                <div className="register-btn">
+                    <Button type="submit">Submit</Button>
+                </div>
+              
 
             </Form>
         </Container>
