@@ -37,3 +37,14 @@
 .footer {
     padding: 20px;
   }
+
+.resize-img {
+    width: 70%;
+}
+
+.div-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #315e92!important;
+    border-radius: 25px;
+}

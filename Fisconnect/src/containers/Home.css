@@ -74,6 +74,16 @@
     /* Yellow from Wix site color: #D6CC11; */
     color: #f4d160;
   }
+
+  .title {
+    color: #c4dbf0;
+  }
+
+  .title:hover {
+    color: #f8dc80;
+    cursor: pointer;
+  }
+
   
   .blue-background {
     /* Blue from Wix site background-color: #093F7C; */
@@ -91,7 +101,8 @@
   .buttons button, a.btn {
     margin: 10px 0px;;
     background-color: #315e92;
-    color: #f4d160;
+    /* color: #f4d160; */
+    color: #c4dbf0;
     text-decoration: none;
   }
 

@@ -16,10 +16,13 @@ function App() {
   return (
     <div className="Home" style={{ backgroundImage: "url(../../images/Homepage2.jpg)"}} id="background_img">
       <NavigationBar/>
-      <Container className="homepageWelcome yellow-font d-flex align-items-center">
+      <Container className="homepageWelcome blue-font d-flex align-items-center">
         <div className="center-align">
           <h2>we are</h2>
-          <h1 className="font-weight-bold">Bubble Vision</h1>  
+          <LinkContainer to="/aboutus">
+            <h1 className="font-weight-bold title">Bubble Vision</h1>  
+          </LinkContainer>
+          
           <h2>we connect businesses to freelance videographers and photographers</h2>
         </div>
 {/* 

@@ -2,6 +2,7 @@ import { Container, Row, Col, Navbar, Nav, Form, FormControl, Button } from 'rea
 import './Register.css';
 import { useState } from 'react';
 import NavigationBar from '../containers/NavigationBar.js'
+import Footer from '../containers/Footer.js'
 
 function Register(props) {
     const [validated, setValidated] = useState(false);
@@ -20,7 +21,7 @@ function Register(props) {
         <NavigationBar />
 
         <Container fluid className="RegisterButton" id="background_img_register">
-            <h1>Come Work With Us!</h1>
+            <h1 className="center-align">Come Work With Us!</h1>
             <br/>
             <h5>1. Consistent job placements</h5>
             <h5>2. Seamless invoice management systems</h5>
@@ -83,6 +84,7 @@ function Register(props) {
 
             </Form>
         </Container>
+        <Footer />
         </div>
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Container } from 'react-bootstrap';
+import { Image, Container, Row, Col } from 'react-bootstrap';
 import Footer from '../containers/Footer.js';
 import './AboutUs.css';
 import NavigationBar from '../containers/NavigationBar.js'
@@ -10,8 +10,10 @@ function AboutUs(props) {
   <div className="blue-background">
    <div className="AboutUs">
       <NavigationBar />
-        <div className="m-3 p-2">
+  
+        <div className="div-container m-3 p-3">
             <h1>Who We Are</h1>
+            
             <br/>
             <p>
               Consider us the Airbnb of visual content creation!
@@ -25,24 +27,17 @@ function AboutUs(props) {
             </p>
           </div>
 
-          <div className="m-3 p-2">
-            <h1>Why Bubble Vision?</h1>
-            <br/>
-            <p>
-              We connect small enterprises to talented visual content freelancers.
-            </p>
+          <Image className="resize-img" src="../images/team.jpg" rounded/>
 
-          </div>
-
-          <div className="m-3 p-2">
+          <div className="div-container m-3 p-3">
             <h1>Our Offering</h1>
             <br/>
             <p>
             Source a content creator to stay competitive and more relevant than your competitors.
             <br/><br/>
-            We connect businesses with certified, highly experienced freelancers that can execute premium visual content at amore affordable price rather than hiring a full-service agency. 
-            <br/><br/>
-            Bubblevision provides businesses with an online hub to conveniently choose from a broad bank of freelancers in one location.
+            We connect businesses with certified, highly experienced freelancers that can execute premium visual content at amore affordable price rather than hiring a full-service agency.
+            <br/>
+            Bubble Vision provides businesses with an online hub to conveniently choose from a broad bank of freelancers in one location.
             </p>
           </div>
       
