@@ -40,25 +40,12 @@
   
   .Home .homepageWelcome {
     text-align: left;
-    /* color: white; */
-    /* font-family: roboto-thin, roboto, sans-serif; */
-    /* font-family: 'Lexend', sans-serif; */
     padding: 100px 0;
     padding-left: 75px;
   }
 
-  .Home .homepageWelcome h3, h2{
-    /* text-align: left; */
-    /* color: white; */
-
-  }
-
   .Home .homepageWelcome h1{
     font-size: 100px;
-    /* text-align: center; */
-    /* color: white; */
-    /* font-family: bold; */
-
   }
     
   #background_img {
@@ -101,7 +88,6 @@
   .buttons button, a.btn {
     margin: 10px 0px;;
     background-color: #315e92;
-    /* color: #f4d160; */
     color: #c4dbf0;
     text-decoration: none;
   }

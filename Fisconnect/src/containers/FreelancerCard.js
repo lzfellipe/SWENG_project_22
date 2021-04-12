@@ -16,49 +16,41 @@ function FreelancerCard(props) {
   } = props;
 
 
-    return (
-      
-      <Col xs={12} md={6} lg={4} xl={3}>
-          <Card className="freelancer_card yellow-font" key={freelancer.id} style={{flex: 1, justifyContent: 'center'}}>        
+  return (
 
-              <Image className="card_image" variant="top" src={freelancer.thumbnail} rounded/> 
+    <Col xs={12} md={6} lg={4} xl={3}>
+      <Card className="freelancer_card yellow-font" key={freelancer.id} style={{ flex: 1, justifyContent: 'center' }}>
 
-              <LinkContainer to={`freelancers/portfolio/${freelancer.id}`} className="card_btn">
-                <Card.Body>
-                <Image className="profile_pic" src={freelancer.profile_photo} roundedCircle />
+        <Image className="card_image" variant="top" src={freelancer.thumbnail} rounded />
 
-                    
-                  <Card.Title className="font-weight-bold">{freelancer.name}</Card.Title>
-                  
-                  <Card.Subtitle>{freelancer.job_title}</Card.Subtitle>
-                  <Card.Text>{freelancer.sector}</Card.Text>
+        <LinkContainer to={`freelancers/portfolio/${freelancer.id}`} className="card_btn">
+          <Card.Body>
+            <Image className="profile_pic" src={freelancer.profile_photo} roundedCircle />
 
-                </Card.Body>
-              </LinkContainer>
-              
-              <Accordion defaultActiveKey="0">
-                <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                  See More
+
+            <Card.Title className="font-weight-bold">{freelancer.name}</Card.Title>
+
+            <Card.Subtitle>{freelancer.job_title}</Card.Subtitle>
+            <Card.Text>{freelancer.sector}</Card.Text>
+
+          </Card.Body>
+        </LinkContainer>
+
+        <Accordion defaultActiveKey="0">
+          <Accordion.Toggle as={Button} variant="link" eventKey="1">
+            See More
                 </Accordion.Toggle>
 
-                <Accordion.Collapse eventKey="1">
-                  <ListGroup className="list-group">
-                    <ListGroup.Item className="light-blue-bg">{freelancer.card_description}</ListGroup.Item>
-                    <ListGroup.Item className="light-blue-bg">Full Day Rate: {freelancer.full_day_rate}</ListGroup.Item>
-                  </ListGroup>
-                </Accordion.Collapse>
-              </Accordion>
-
-              {/* Separate button at bottom */}
-              {/* <Card.Body>
-                <LinkContainer to={`freelancers/portfolio/${freelancer.id}`}>
-                      <button className="btn">Check out my portfolio</button>
-                </LinkContainer>
-              </Card.Body> */}
-
-          </Card>
-        </ Col>
-    );
+          <Accordion.Collapse eventKey="1">
+            <ListGroup className="list-group">
+              <ListGroup.Item className="light-blue-bg">{freelancer.card_description}</ListGroup.Item>
+              <ListGroup.Item className="light-blue-bg">Full Day Rate: {freelancer.full_day_rate}</ListGroup.Item>
+            </ListGroup>
+          </Accordion.Collapse>
+        </Accordion>
+      </Card>
+    </ Col>
+  );
 }
 
 FreelancerCard.propTypes = {

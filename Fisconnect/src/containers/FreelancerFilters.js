@@ -3,23 +3,6 @@ import { Row, Col, Form, Accordion, Button } from 'react-bootstrap'
 
 
 const Filters = ({ setSearchQuery }) => {
-//   constructor() {
-//     super();
-//     this.state = {
-//       name: "React"
-//     };
-//     this.onChangeValue = this.onChangeValue.bind(this);
-//   }
-
-//   handleChange = e => {
-//     const { name, value } = e.target;
-
-//     this.setState({
-//       [name]: value
-//     });
-//   };
-
-//   render() {
     return (
     <div className="toggle">
     <Accordion defaultActiveKey="0">
@@ -84,8 +67,6 @@ const Filters = ({ setSearchQuery }) => {
         </Accordion.Collapse>
         </Accordion>
         </div>
-
-
     );
   }
 

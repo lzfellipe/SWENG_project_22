@@ -50,9 +50,6 @@ function Freelancers() {
   const query = new URLSearchParams(search).get('s');
   const [searchQuery, setSearchQuery] = useState(query || '');
   const filteredFreelancers = filterFreelancers(freelancer_info, searchQuery);
-
-{/*  render() {
-console.log(this.state); */}
   
       return (
         <div className="blue-background">
@@ -73,7 +70,6 @@ console.log(this.state); */}
         </Container>
         </div>
       );
-    // }
 }
   
 export default Freelancers;
