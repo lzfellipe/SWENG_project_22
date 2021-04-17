@@ -16,31 +16,39 @@ const filterFreelancers = (cards, query) => {
       return cards;
   }
 
-  if(query == "videographer") {
-    return cards.filter((card) => {
-      const cardType = card.job_title.toLowerCase();
-      return cardType.includes(query);
-    });
-  }
+  // if(query == "videographer") {
+  //   return cards.filter((card) => {
+  //     const cardType = card.job_title.toLowerCase();
+  //     return cardType.includes(query);
+  //   });
+  // }
 
-  else if(query == "photographer") {
-    return cards.filter((card) => {
-      const cardType = card.job_title.toLowerCase();
-      return cardType.includes(query);
-    });
-  }
+  // else if(query == "photographer") {
+  //   return cards.filter((card) => {
+  //     const cardType = card.job_title.toLowerCase();
+  //     return cardType.includes(query);
+  //   });
+  // }
 
-  else if(query.startsWith("_")) {
-    query = query.substring(1);
-    return cards.filter((card) => {
-      const cardType = card.sector.toLowerCase();
-      return cardType.includes(query);
-    });
-  }
+  // else if(query.startsWith("_")) {
+  //   query = query.substring(1);
+  //   return cards.filter((card) => {
+  //     const cardType = card.sector.toLowerCase();
+  //     return cardType.includes(query);
+  //   });
+  // }
 
   return cards.filter((card) => {
       const cardName = card.name.toLowerCase();
-      return cardName.includes(query);
+      const cardJob = card.job_title.toLowerCase();
+      const cardSector = card.sector.toLowerCase();
+
+      if(cardName.includes(query))
+        return cardName.includes(query);
+      else if(cardJob.includes(query))
+        return cardJob.includes(query);
+      else if(cardSector.includes(query))
+        return cardSector.includes(query);
   });
 };
 
