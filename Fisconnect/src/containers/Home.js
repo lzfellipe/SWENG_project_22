@@ -1,7 +1,7 @@
 import './Home.css';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import { Container, Image, Row, Col, Navbar, Nav, Form, FormControl, Button, Modal} from 'react-bootstrap';
+import { Container, Row, Col, Button, Modal} from 'react-bootstrap';
 import { useState } from 'react';
 import { LinkContainer } from "react-router-bootstrap";
 import SubmitProjectForm from './SubmitProjectForm.js'
@@ -25,12 +25,6 @@ function App() {
           
           <h2>we connect businesses to freelance videographers and photographers</h2>
         </div>
-{/* 
-        <h3>Search for your next genius</h3>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-light">Search</Button>
-        </Form> */}
 
       </Container>
 

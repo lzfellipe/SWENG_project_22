@@ -30,8 +30,6 @@
     padding: 10px;
     width: 100%;
     background-color: #315e92!important;
-    /* background-color: #fbeeac!important; */
-    /* background-color: #f4d160!important; */
   }
 
 .light-blue-bg {
@@ -74,7 +72,6 @@
 }
 
 .card_btn:hover {
-  /* color: #28527ac0; */
   color: #f4d160bb;
 
 }

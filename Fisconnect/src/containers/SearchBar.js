@@ -5,9 +5,6 @@ import Button from 'react-bootstrap/Button';
 const SearchBar = ({ searchQuery, setSearchQuery }) => {
     return (
         <Form bg="dark" action="/" method="get">
-            {/* <label htmlFor="header-search">
-                <span className="visually-hidden">Search blog posts</span>
-            </label> */}
             <Form.Control
                 value={searchQuery}
                 onInput={(e) => setSearchQuery(e.target.value)}
@@ -16,7 +13,6 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
                 placeholder="Search Freelancers"
                 name="s" 
             />
-            {/* <Button type="submit">Search</Button> */}
         </Form>
     );
     

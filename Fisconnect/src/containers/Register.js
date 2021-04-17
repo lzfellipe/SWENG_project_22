@@ -1,10 +1,10 @@
-import { Container, Row, Col, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import { Container, Col, Form, Button } from 'react-bootstrap';
 import './Register.css';
 import { useState } from 'react';
 import NavigationBar from '../containers/NavigationBar.js'
 import Footer from '../containers/Footer.js'
 
-function Register(props) {
+function Register() {
     const [validated, setValidated] = useState(false);
 
     const handleSubmit = (event) => {

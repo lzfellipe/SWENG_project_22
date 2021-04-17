@@ -1,9 +1,6 @@
-//for now i just copied the home page for testing
-
 import './Portfolio.css';
 import'bootstrap/dist/css/bootstrap.css';
-import { Container, Carousel, Row, Col, Navbar, Nav, Form, FormControl, Button, Modal} from 'react-bootstrap';
-import React, { Component } from 'react';
+import {Carousel, Row, Col, Button, Modal} from 'react-bootstrap';
 import { useParams } from 'react-router';
 import freelancer_info from "../data/freelancer_data";
 import 'photoswipe/dist/photoswipe.css';
@@ -13,7 +10,7 @@ import { useState } from 'react';
 import SubmitProjectForm from './SubmitProjectForm.js';
 import NagivationBar from './NavigationBar.js'
 
-function Portfolio(props) {
+function Portfolio() {
     const {id} = useParams();
     const freelancer = freelancer_info[id];
 
@@ -23,7 +20,7 @@ function Portfolio(props) {
     const handleShow = () => setShow(true);
 
   return (
-    <div className="Portfolio shadow-lg p-2 mb-5">
+    <div className="Portfolio shadow-lg mb-5">
       <NagivationBar />
         <Carousel className="main_carousel">
         {freelancer.photos.map(photo => (

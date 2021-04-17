@@ -1,4 +1,3 @@
-import { Component } from "react";
 import { Row, Col, Form, Accordion, Button } from 'react-bootstrap'
 
 
@@ -33,7 +32,7 @@ const Filters = ({ setSearchQuery }) => {
             <Col>
             <input
                 type="radio" 
-                value="_events" 
+                value="events" 
                 name="type" 
                 onChange={(e) => setSearchQuery(e.target.value)}
             /> Events
@@ -41,7 +40,7 @@ const Filters = ({ setSearchQuery }) => {
             <Col>
             <input 
                 type="radio"
-                value="_retail"
+                value="retail"
                 name="type"
                 onChange={(e) => setSearchQuery(e.target.value)}
             /> Retail
@@ -49,7 +48,7 @@ const Filters = ({ setSearchQuery }) => {
             <Col>
             <input 
                 type="radio"
-                value="_hospitality"
+                value="hospitality"
                 name="type"
                 onChange={(e) => setSearchQuery(e.target.value)}
             /> Hospitality
@@ -57,7 +56,7 @@ const Filters = ({ setSearchQuery }) => {
             <Col>
             <input 
                 type="radio"
-                value="_corporate"
+                value="corporate"
                 name="type"
                 onChange={(e) => setSearchQuery(e.target.value)}
             /> Corporate
