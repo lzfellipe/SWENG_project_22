@@ -7,7 +7,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Image from 'react-bootstrap/Image';
 import Accordion from 'react-bootstrap/Accordion';
 import Button from 'react-bootstrap/Button'
-import { Col, Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 
 function FreelancerCard(props) {

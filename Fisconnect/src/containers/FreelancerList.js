@@ -1,7 +1,6 @@
 import React from 'react';
 import FreelancerCard from './FreelancerCard.js';
 import PropTypes from 'prop-types';
-import CardDeck from 'react-bootstrap/CardDeck';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
