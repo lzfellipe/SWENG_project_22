@@ -1,0 +1,3 @@
+- Details of how to install
+- What software package dependencies
+- Walk through video with main use cases showing the operation of the programme
