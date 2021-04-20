@@ -1,7 +1,3 @@
-- Details of how to install
-- What software package dependencies
-- Walk through video with main use cases showing the operation of the programme
-
 # Deployment Details
 ## Dependencies
 - Node.js
@@ -20,3 +16,8 @@ From here, if all the above dependencies are installed, you should be able to ru
 
 `npm start`
 
+## Video Walkthrough
+
+A video walkthrough of the main use cases can be found here:
+
+https://youtu.be/kTJD4bhX518
