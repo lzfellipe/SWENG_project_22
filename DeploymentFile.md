@@ -1,12 +1,15 @@
-# Deployment Details
+# Deployment Details
 
-## Dependencies
+## Prerequisites
+- Node.js must be installed
 
-- Node.js
+## Dependencies
+These will get installed when `npm install` is run (see below)
 - React Bootstrap
 - PhotoSwipe Gallery
+- EmailJS
 
-## Running the Project
+## Running the Project
 
 1. Install Node.js
 
@@ -33,6 +36,7 @@
 
     npm install react-bootstrap
     npm install photoswipe react-photoswipe-gallery
+    npm install emailjs --save
 
 
 ## Video Walkthrough

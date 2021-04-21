@@ -2,7 +2,7 @@
   "name": "react-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://lzfellipe.github.io/SWENG_project_22",
+  "homepage": "https://lzfellipe.github.io/SWENG_project_22",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",

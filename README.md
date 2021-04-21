@@ -8,5 +8,5 @@ This project involved building the platform using ReactJS.
 ## Source Code Bundle
 This code bundle contains:
 
-- Full ReactJS project in the `Fisconnect` folder
-- Deployment details in `DeploymentFile.md`
+- Full ReactJS project in the *Fisconnect* folder
+- Deployment details in *DeploymentFile.md*
