@@ -19,7 +19,7 @@ These will get installed when `npm install` is run (see below)
 
 3. Within the terminal navigate to the location of your local copy of the repository
 
-4. Navigate to the *Fisconnect* folder
+4. Navigate to the *Fisconnect* (within SWENG_project_22) folder
 
 `cd Fisconnect`
 
