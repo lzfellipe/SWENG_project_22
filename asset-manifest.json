@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/SWENG_project_22/static/css/main.6533ebff.chunk.css",
+    "main.js": "/SWENG_project_22/static/js/main.5ad77c4f.chunk.js",
+    "main.js.map": "/SWENG_project_22/static/js/main.5ad77c4f.chunk.js.map",
+    "runtime-main.js": "/SWENG_project_22/static/js/runtime-main.4de81c07.js",
+    "runtime-main.js.map": "/SWENG_project_22/static/js/runtime-main.4de81c07.js.map",
+    "static/css/2.7472a3a9.chunk.css": "/SWENG_project_22/static/css/2.7472a3a9.chunk.css",
+    "static/js/2.39c521be.chunk.js": "/SWENG_project_22/static/js/2.39c521be.chunk.js",
+    "static/js/2.39c521be.chunk.js.map": "/SWENG_project_22/static/js/2.39c521be.chunk.js.map",
+    "index.html": "/SWENG_project_22/index.html",
+    "static/css/2.7472a3a9.chunk.css.map": "/SWENG_project_22/static/css/2.7472a3a9.chunk.css.map",
+    "static/css/main.6533ebff.chunk.css.map": "/SWENG_project_22/static/css/main.6533ebff.chunk.css.map",
+    "static/js/2.39c521be.chunk.js.LICENSE.txt": "/SWENG_project_22/static/js/2.39c521be.chunk.js.LICENSE.txt",
+    "static/media/default-skin.css": "/SWENG_project_22/static/media/default-skin.f64c3af3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4de81c07.js",
+    "static/css/2.7472a3a9.chunk.css",
+    "static/js/2.39c521be.chunk.js",
+    "static/css/main.6533ebff.chunk.css",
+    "static/js/main.5ad77c4f.chunk.js"
+  ]
+}
