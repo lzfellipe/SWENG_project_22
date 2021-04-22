@@ -23,12 +23,13 @@
   }
     
   #background_img {
+    display: block;
+    justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     min-height: 600px;
     height: calc(100vh);
-    background-position:center center;
   }
 
   .yellow-font {
@@ -61,8 +62,8 @@
 
   .buttons button, a.btn {
     margin: 10px 0px;;
-    background-color: #315e92;
-    color: #c4dbf0;
+    background-color: #28527a;
+    color: #f4d160;
     text-decoration: none;
   }
 
@@ -84,9 +85,17 @@
     width: 200px;
     border-radius: 50%;
     text-align: center;
-    display: inline-block; 
+    font-size: 17px;
   }
 
   #btn_link {
-    color: white;
+    color: #f4d160;
+    text-align: center;
+    font-size: 18px;
+    display:block;
+    padding-top: 21%;
+    padding-bottom: 21%;
+    padding-left: 5%;
+    padding-right: 5%;
+
   }
