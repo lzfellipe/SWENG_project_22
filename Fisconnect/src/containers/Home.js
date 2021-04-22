@@ -21,11 +21,37 @@ function App() {
     <div>
       <div className="Home" style={{ backgroundImage: "url(../../images/Homepage1.jpg)"}} id="background_img">
       <NavigationBar/>
+      <ScrollContainer className="homepageWelcome blue-font d-flex align-items-center">
+        <ScrollPage page={0}>
+          <LinkContainer to="/aboutus">
+            <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+              <h1 className="font-weight-bold title">Bubble Vision</h1>  
+            </Animator>
+          </LinkContainer>
+        </ScrollPage>
+      </ScrollContainer>
       </div>
 
-      <div className="Home" style={{ backgroundImage: "url(../../images/Homepage3.jpg)"}} id="background_img"/>
+      <div className="Home" style={{ backgroundImage: "url(../../images/Homepage3.jpg)"}} id="background_img">
+      <ScrollContainer className="homepageWelcome blue-font d-flex align-items-center">
+        <ScrollPage page={1}>
+          <Animator animation={FadeUp}>
+            <h3 className="font-weight-bold title">Connecting Businesses to Freelance Videographers and Photographers</h3>
+          </Animator>
+        </ScrollPage>
+      </ScrollContainer>
+      </div>
 
-      <div className="Home" style={{ backgroundImage: "url(../../images/Homepage5.png)"}} id="background_img"/>
+      <div className="Home" style={{ backgroundImage: "url(../../images/Homepage5.png)"}} id="background_img">
+      <ScrollContainer className="homepageWelcome blue-font d-flex align-items-center">
+        <ScrollPage page={2}>
+          <Animator animation={FadeUp}>
+            <h3 className="font-weight-bold title">Find out more below</h3>
+          </Animator>
+        </ScrollPage>
+      </ScrollContainer>
+      </div>
+
 
       <Container>
       <Row className="buttons">
@@ -57,25 +83,6 @@ function App() {
       </Modal>
       </Container>
 
-      <ScrollContainer className="homepageWelcome blue-font d-flex align-items-center">
-        <ScrollPage page={0}>
-          <LinkContainer to="/aboutus">
-            <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-              <h1 className="font-weight-bold title">Bubble Vision</h1>  
-            </Animator>
-          </LinkContainer>
-        </ScrollPage>
-        <ScrollPage page={1}>
-          <Animator animation={FadeUp}>
-            <h3 className="font-weight-bold title">Connecting Businesses to Freelance Videographers and Photographers</h3>
-          </Animator>
-        </ScrollPage>
-        <ScrollPage page={2}>
-          <Animator animation={FadeUp}>
-            <h3 className="font-weight-bold title">Find out more below</h3>
-          </Animator>
-        </ScrollPage>
-      </ScrollContainer>
 
     </div>
   );
