@@ -31,7 +31,7 @@ function App() {
       <Row className="buttons">
         <Col className="d-flex justify-content-center">
           <Button id="home_btn">
-            <Link id="btn_link">Browse Freelancers</Link>
+            <Link id="btn_link" to="/freelancers">Browse Freelancers</Link>
           </Button>
         </Col>
         <Col className="d-flex justify-content-center">
