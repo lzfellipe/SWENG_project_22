@@ -27,6 +27,14 @@ const Filters = ({ setSearchQuery }) => {
                 onChange={(e) => setSearchQuery(e.target.value)}
             /> Photographer
             </Col>
+            <Col>
+            <input 
+                type="radio"
+                value="corporate"
+                name="type"
+                onChange={(e) => setSearchQuery(e.target.value)}
+            /> Corporate
+            </Col>
             </Row>
             <Row>
             <Col>
@@ -52,14 +60,6 @@ const Filters = ({ setSearchQuery }) => {
                 name="type"
                 onChange={(e) => setSearchQuery(e.target.value)}
             /> Hospitality
-            </Col>
-            <Col>
-            <input 
-                type="radio"
-                value="corporate"
-                name="type"
-                onChange={(e) => setSearchQuery(e.target.value)}
-            /> Corporate
             </Col>
             </Row>
         </Form>

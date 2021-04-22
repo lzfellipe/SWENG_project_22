@@ -53,6 +53,7 @@ function App() {
       </div>
 
 
+      <div className="Footer" style={{ backgroundImage: "url(../../images/Homepage2.jpg)"}} id="background_footer_img">
       <Container>
       <Row className="buttons">
         <Col className="d-flex justify-content-center">
@@ -82,6 +83,7 @@ function App() {
         </Modal.Footer>
       </Modal>
       </Container>
+      /</div>
 
 
     </div>
