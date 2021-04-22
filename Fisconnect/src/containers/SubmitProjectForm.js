@@ -80,7 +80,7 @@ function SubmitProjectForm() {
                 <Form.Control.Feedback type="invalid">Please enter your project details!</Form.Control.Feedback>
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" >
                 Submit
             </Button>
 
