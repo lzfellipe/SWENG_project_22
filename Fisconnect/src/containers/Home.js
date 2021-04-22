@@ -23,15 +23,15 @@ function App() {
             <h1 className="font-weight-bold title">Bubble Vision</h1>  
           </LinkContainer>
           
-          <h3 className="font-weight-bold title">We Connect Businesses to Freelance Videographers and Photographers</h3>
+          <h3 className="font-weight-bold title">Connecting Businesses to Freelance Videographers and Photographers</h3>
         </div>
 
       </Container>
 
       <Row className="buttons">
         <Col className="d-flex justify-content-center">
-          <Button id="home_btn" className="btn-lg">
-            <Link id="btn_link" to="/freelancers">Browse Freelancers</Link>
+          <Button id="home_btn">
+            <Link id="btn_link">Browse Freelancers</Link>
           </Button>
         </Col>
         <Col className="d-flex justify-content-center">

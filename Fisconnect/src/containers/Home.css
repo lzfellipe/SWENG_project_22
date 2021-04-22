@@ -61,8 +61,8 @@
 
   .buttons button, a.btn {
     margin: 10px 0px;;
-    background-color: #315e92;
-    color: #c4dbf0;
+    background-color: #28527a;
+    color: #f4d160;
     text-decoration: none;
   }
 
@@ -84,9 +84,11 @@
     width: 200px;
     border-radius: 50%;
     text-align: center;
+    font-size: 17px;
     display: inline-block; 
   }
 
   #btn_link {
-    color: white;
+    color: #f4d160;
+    font-size: 18px;
   }
