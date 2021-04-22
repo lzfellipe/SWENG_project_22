@@ -14,6 +14,7 @@
   background-color: #315e92;
   color: #f4d160;
   text-decoration: none;
+  border-radius: 50px;
 }
 
 .toggle button:hover {
@@ -46,6 +47,8 @@
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  border-radius: 50px;
+
 }
 
 .freelancer_card button:hover {
