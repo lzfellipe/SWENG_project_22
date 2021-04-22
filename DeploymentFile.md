@@ -8,6 +8,7 @@ These will get installed when `npm install` is run (see below)
 - React Bootstrap
 - PhotoSwipe Gallery
 - EmailJS
+- React Scroll Motion
 
 ## Running the Project
 
@@ -37,10 +38,11 @@ These will get installed when `npm install` is run (see below)
     npm install react-bootstrap
     npm install photoswipe react-photoswipe-gallery
     npm install emailjs --save
+    npm install react-scroll-motion
 
 
 ## Video Walkthrough
 
 A video walkthrough of the main use cases can be found here:
 
-https://youtu.be/kTJD4bhX518
+https://www.youtube.com/watch?v=zRCAOKVXYcg
