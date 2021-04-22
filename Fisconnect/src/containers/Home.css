@@ -28,7 +28,7 @@
     position: relative;
     min-height: 600px;
     height: calc(100vh);
-    background-position:right top;
+    background-position:center center;
   }
 
   .yellow-font {
@@ -76,4 +76,17 @@
     background-color: #28527a;
     color: #f4d160;
     text-decoration: none;
+  }
+
+  #home_btn {
+    display:block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block; 
+  }
+
+  #btn_link {
+    color: white;
   }
