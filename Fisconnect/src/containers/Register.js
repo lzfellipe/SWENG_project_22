@@ -15,7 +15,6 @@ function Register() {
             event.stopPropagation();
         }
         setValidated(true);
-        sendEmail();
     };
 
     /*  For emails to be sent, an account must be created at emailjs.com. You must create an email service which is linked to your bubble vision email.
