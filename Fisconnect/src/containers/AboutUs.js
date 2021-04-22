@@ -9,7 +9,10 @@ function AboutUs(props) {
   return (
   <div className="blue-background">
    <div className="AboutUs">
+
       <NavigationBar />
+
+      <Image className="resize-img" src="../images/team.jpg" rounded/>
   
         <div className="div-container m-3 p-3">
             <h1>Who We Are</h1>
@@ -25,21 +28,17 @@ function AboutUs(props) {
               Browse our listed freelancers now,
               or send us your visual content needs and we will do the matching for you!
             </p>
-          </div>
-
-          <Image className="resize-img" src="../images/team.jpg" rounded/>
-
-          <div className="div-container m-3 p-3">
+            <br/><br/>
             <h1>Our Offering</h1>
             <br/>
             <p>
             Source a content creator to stay competitive and more relevant than your competitors.
-            <br/><br/>
             We connect businesses with certified, highly experienced freelancers that can execute premium visual content at amore affordable price rather than hiring a full-service agency.
-            <br/>
+            <br/><br/>
             Bubble Vision provides businesses with an online hub to conveniently choose from a broad bank of freelancers in one location.
             </p>
           </div>
+
       
       </div> 
       <Footer />
